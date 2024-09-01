@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import io
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 
 def ocr_detection(pil_image):
     # Convert PIL image to RGB (necessary for pytesseract)
