@@ -1,11 +1,12 @@
 from openai import OpenAI
 from dotenv import load_dotenv
-import os
+import streamlit as st
+
 
 # Load environment variables
 load_dotenv()
 
-api_key = os.getenv('API_KEY')
+api_key = st.secrets["API_KEY"]
 
 # Create an OpenAI client with your DeepInfra token and endpoint
 openai = OpenAI(
