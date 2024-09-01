@@ -8,5 +8,5 @@ The application consists of the following modules:
 
 - **Streamlit Frontend**: The user interface where users interact with the app.
 - **OCR Module**: Extracts text from uploaded prescription images.
-- **Chatbot Module**: Handles user queries related to medicines using Llama 3.1.
+- **Chatbot Module**: Handles user queries related to medicines using a LLM.
 - **Medicine Database Module**: Provides information about medicines.
