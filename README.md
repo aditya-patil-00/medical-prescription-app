@@ -30,7 +30,7 @@ graph TD
     B -->|Sends chat messages| D[Chatbot Module]
     B -->|Queries medicine info| E[Medicine Database Module]
     C -->|Extracts text| F[OCR Engine]
-    D -->|Processes queries| G[LLM (Llama 3.1)]
+    D -->|Processes queries| G[LLM]
     E -->|Queries| H[(Medicine Database)]
     C -->|Returns recognized text| B
     D -->|Returns responses| B
