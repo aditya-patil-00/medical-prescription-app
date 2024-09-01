@@ -2,14 +2,31 @@
 
 This Streamlit application allows users to upload medical prescriptions for text extraction and interact with a chatbot to get information about medicines. The app combines Optical Character Recognition (OCR) for text extraction with a chatbot powered by a large language model (LLM) and a medicine database.
 
-## Architecture
+<h2> Local installation Steps:</h2>
 
-The application consists of the following modules:
+<p>1. Clone the repository</p>
 
-- **Streamlit Frontend**: The user interface where users interact with the app.
-- **OCR Module**: Extracts text from uploaded prescription images.
-- **Chatbot Module**: Handles user queries related to medicines using a LLM.
-- **Medicine Database Module**: Provides information about medicines.
+```
+git clone https://github.com/aditya-patil-00/medical-prescription-app.git
+```
+
+<p>2. Setup virtual environment</p>
+
+```
+python -m venv myenv 
+```
+
+<p>3. Install requirements.txt</p>
+
+```
+pip install -r requirements.txt
+```
+
+<p>4. Run the app</p>
+
+```
+streamlit run app.py
+```
 
 ## Features
 
