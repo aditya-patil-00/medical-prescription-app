@@ -1,20 +1,24 @@
 import pytesseract
 from PIL import Image
-import cv2
+import numpy as np
+import io
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-def ocr_detection(image_path):
-    # Load image
-    image = cv2.imread(image_path)
-    # Convert image to RGB
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    # Use pytesseract to detect text
+def ocr_detection(pil_image):
+    # Convert PIL image to RGB (necessary for pytesseract)
+    image = pil_image.convert("RGB")
+    
+    # Convert PIL image to a NumPy array
+    image_np = np.array(image)
+
     text = pytesseract.image_to_string(image)
 
     return text
 
 # Test
-image_path = 'sample2.jpg'
-text = ocr_detection(image_path)
-print(text)
+if __name__ == "__main__":
+#    image_path = 'sample2.jpg'
+#    text = ocr_detection(image_path)
+#    print(text)
+    pass
